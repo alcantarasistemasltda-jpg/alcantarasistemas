@@ -48,11 +48,11 @@ export function AboutSection() {
           </div>
 
           <h2 className="font-outfit text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight">
-            Engenharia de Software e Plataformas Digitais.
+            Engenharia de Software, Produtos Proprietários e Operação Contínua.
           </h2>
 
           <p className="mt-4 text-base sm:text-lg text-slate-300 font-normal leading-relaxed">
-            A Alcantara Sistemas desenvolve soluções digitais para transformar operações complexas em sistemas eficientes, escaláveis e preparados para evolução contínua.
+            Unimos a disciplina da engenharia de software à experiência real de quem constrói e opera suas próprias plataformas SaaS. Transformamos operações complexas em tecnologia escalável e de alto impacto.
           </p>
         </div>
 

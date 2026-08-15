@@ -94,11 +94,11 @@ export function ProjectDiagnosisSection() {
             {/* Coluna de Mensagem Principal */}
             <div className="lg:col-span-5 flex flex-col items-start space-y-6">
               <h2 className="font-outfit text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
-                Tem um projeto em mente?
+                Vamos Diagnosticar e Estruturar o Seu Projeto.
               </h2>
 
               <p className="text-base sm:text-lg text-slate-300 font-normal leading-relaxed">
-                Conte-nos o que você precisa. Nossa equipe pode transformar sua necessidade em uma solução digital estruturada, escalável e pronta para crescer.
+                Compartilhe seus desafios operacionais. Nossa equipe de engenharia analisará sua necessidade para desenhar uma arquitetura robusta, escalável e pronta para operação contínua.
               </p>
 
               {/* Lista de Compromissos de Atendimento */}

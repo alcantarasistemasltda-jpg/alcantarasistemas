@@ -7,6 +7,7 @@ export interface ServiceItem {
   shortDescription: string;
   fullDescription?: string;
   iconName: "Globe" | "Database" | "BarChart3" | "Cpu" | "Layout";
+  badgeName?: string;
   features: string[];
   capabilities: string[];
   ctaText?: string;
@@ -55,6 +56,7 @@ export const servicesData: ServiceItem[] = [
     shortDescription: "Sistemas web, plataformas digitais e produtos SaaS escaláveis desenvolvidos com arquitetura moderna e alta performance.",
     fullDescription: "Desenvolvemos produtos digitais completos com foco em experiência do usuário, segurança e capacidade de escala para milhares de acessos simultâneos.",
     iconName: "Globe",
+    badgeName: "SAAS ARCHITECTURE",
     features: [
       "Arquiteturas orientadas a microsserviços",
       "Frontends ultrarrápidos com Next.js & React",
@@ -70,6 +72,7 @@ export const servicesData: ServiceItem[] = [
     shortDescription: "Sistemas personalizados para automação de processos operacionais, administrativos e financeiros de alta complexidade.",
     fullDescription: "Projetamos ecossistemas operacionais customizados para eliminar gargalos manuais, integrar departamentos e garantir controle total do negócio.",
     iconName: "Database",
+    badgeName: "ENTERPRISE OPS",
     features: [
       "Gestão financeira, faturamento e DRE",
       "Módulos operacionais sob medida",
@@ -85,6 +88,7 @@ export const servicesData: ServiceItem[] = [
     shortDescription: "Plataformas de relacionamento, centralização de dados e inteligência estratégica para tomada de decisão.",
     fullDescription: "Transformamos dados dispersos em dashboards executivos dinâmicos e funis de atendimento totalmente integrados.",
     iconName: "BarChart3",
+    badgeName: "DATA & BI",
     features: [
       "Gestão de pipeline de vendas e atendimento",
       "Dashboards de Business Intelligence em tempo real",
@@ -100,6 +104,7 @@ export const servicesData: ServiceItem[] = [
     shortDescription: "Integrações de ecossistemas, automações inteligentes de processos e soluções utilizando Inteligência Artificial.",
     fullDescription: "Conectamos sistemas legados, terceiros e modelos de IA para orquestrar fluxos de trabalho inteligentes e autônomos.",
     iconName: "Cpu",
+    badgeName: "INTEGRATION & AI",
     features: [
       "Construção e consumo de APIs REST & GraphQL",
       "Orquestração de fluxos com IA gerativa e LLMs",
@@ -115,6 +120,7 @@ export const servicesData: ServiceItem[] = [
     shortDescription: "Criamos sites institucionais, landing pages e páginas comerciais modernas, responsivas e orientadas à conversão, integradas às tecnologias e serviços necessários para a operação digital do negócio.",
     fullDescription: "Desenvolvimento de presenciais digitais institucionais e páginas comerciais de alta performance com design moderno e otimização para SEO e conversão.",
     iconName: "Layout",
+    badgeName: "PRESENÇA DIGITAL",
     features: [
       "Sites Institucionais",
       "Landing Pages",

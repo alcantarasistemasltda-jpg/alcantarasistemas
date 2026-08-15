@@ -24,12 +24,12 @@ export function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
               </span>
-              <span>Engenharia de Software & Operação de Plataformas</span>
+              <span>ENGENHARIA DE SOFTWARE • PRODUTOS PROPRIETÁRIOS • OPERAÇÃO CONTÍNUA</span>
             </div>
 
             {/* Headline Principal */}
             <h1 className="font-outfit text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
-              Engenharia de Software e{" "}
+              Engenharia de Software que constrói, opera e evolui{" "}
               <span className="bg-gradient-to-r from-cyan-400 via-sky-300 to-blue-500 bg-clip-text text-transparent">
                 Plataformas Digitais.
               </span>
@@ -37,7 +37,7 @@ export function Hero() {
 
             {/* Subheadline */}
             <p className="text-base sm:text-xl text-slate-300 font-normal leading-relaxed max-w-2xl">
-              Projetamos, desenvolvemos e operamos sistemas digitais sob medida para transformar operações complexas em tecnologia escalável.
+              Desenvolvemos ecossistemas sob medida para operações complexas e operamos nosso próprio portfólio de plataformas SaaS proprietárias. Da arquitetura à evolução contínua.
             </p>
 
             {/* CTAs de Conversão */}

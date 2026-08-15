@@ -22,7 +22,7 @@ export function ServicesSection() {
         <div className="flex flex-col items-start max-w-3xl mb-16 md:mb-20">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs font-mono text-cyan-400 mb-4">
             <span className="h-1.5 w-1.5 rounded-full bg-cyan-400"></span>
-            <span>SOLUÇÕES SOB MEDIDA</span>
+            <span>SERVIÇOS DE ENGENHARIA & SOLUÇÕES</span>
           </div>
 
           <h2 className="font-outfit text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight">
@@ -30,7 +30,7 @@ export function ServicesSection() {
           </h2>
 
           <p className="mt-4 text-base sm:text-lg text-slate-300 font-normal leading-relaxed">
-            Projetamos, construímos e operamos soluções tecnológicas exclusivas. Não entregamos apenas código: entregamos arquitetura resiliente, segurança e capacidade contínua de escala.
+            Aplicamos a mesma engenharia, segurança e rigor técnico dos nossos produtos proprietários no desenvolvimento, modernização e operação contínua das soluções do seu negócio.
           </p>
         </div>
 
@@ -55,7 +55,7 @@ export function ServicesSection() {
                     </div>
 
                     <span className="text-[11px] font-mono text-slate-500 group-hover:text-cyan-400/80 transition-colors uppercase tracking-wider">
-                      Core Service
+                      {service.badgeName || "Core Service"}
                     </span>
                   </div>
 

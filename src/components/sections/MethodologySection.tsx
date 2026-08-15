@@ -66,7 +66,7 @@ export function MethodologySection() {
           </h2>
 
           <p className="mt-4 text-base sm:text-lg text-slate-300 font-normal leading-relaxed">
-            Transformamos desafios operacionais complexos em plataformas escaláveis através de um ciclo de desenvolvimento estruturado e previsível.
+            Aplicamos em cada projeto a mesma metodologia testada e comprovada no desenvolvimento das nossas plataformas proprietárias. Um ciclo estruturado, seguro e focado na evolução contínua.
           </p>
         </div>
 

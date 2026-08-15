@@ -17,11 +17,11 @@ export function ProductsSection() {
           </div>
 
           <h2 className="font-outfit text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight">
-            Produtos & Startups Incubadas pela Alcantara.
+            Plataformas Proprietárias & Startups do Nosso Ecossistema.
           </h2>
 
           <p className="mt-4 text-base sm:text-lg text-slate-300 font-normal leading-relaxed">
-            Não apenas desenvolvemos soluções para parceiros: aplicamos nossa própria metodologia de engenharia na concepção, lançamento e escalabilidade de produtos digitais proprietários.
+            Como Venture Studio, aplicamos nossa própria engenharia na concepção, lançamento e operação contínua de plataformas SaaS proprietárias em diversos setores.
           </p>
         </div>
 
