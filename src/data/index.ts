@@ -6,9 +6,10 @@ export interface ServiceItem {
   title: string;
   shortDescription: string;
   fullDescription?: string;
-  iconName: "Globe" | "Database" | "BarChart3" | "Cpu";
+  iconName: "Globe" | "Database" | "BarChart3" | "Cpu" | "Layout";
   features: string[];
   capabilities: string[];
+  ctaText?: string;
 }
 
 // Entidade que representa Produtos, Plataformas ou Startups da Alcantara Sistemas
@@ -45,7 +46,7 @@ export interface ProductionSystemItem {
   version?: string;
 }
 
-// Dados estruturados dos quatro pilares de serviços da Alcantara Sistemas
+// Dados estruturados dos serviços da Alcantara Sistemas
 export const servicesData: ServiceItem[] = [
   {
     id: "servico-1",
@@ -106,6 +107,21 @@ export const servicesData: ServiceItem[] = [
       "Automação de tarefas repetitivas de alta escala"
     ],
     capabilities: ["Integração de Modelos IA", "Middleware Enterprise", "Automação de Processos"]
+  },
+  {
+    id: "servico-5",
+    slug: "sites-landing-pages",
+    title: "Sites & Landing Pages",
+    shortDescription: "Criamos sites institucionais, landing pages e páginas comerciais modernas, responsivas e orientadas à conversão, integradas às tecnologias e serviços necessários para a operação digital do negócio.",
+    fullDescription: "Desenvolvimento de presenciais digitais institucionais e páginas comerciais de alta performance com design moderno e otimização para SEO e conversão.",
+    iconName: "Layout",
+    features: [
+      "Sites Institucionais",
+      "Landing Pages",
+      "Páginas de Produtos & Serviços"
+    ],
+    capabilities: ["Design Responsivo", "Otimização de Conversão", "SEO & Performance"],
+    ctaText: "Criar meu site"
   }
 ];
 

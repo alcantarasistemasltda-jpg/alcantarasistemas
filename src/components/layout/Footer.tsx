@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Cpu } from "lucide-react";
+import Image from "next/image";
 import { siteConfig } from "@/lib/constants";
 
 export function Footer() {
@@ -17,18 +17,14 @@ export function Footer() {
           
           {/* Brand & Declaração Institucional */}
           <div className="lg:col-span-5 flex flex-col items-start space-y-4">
-            <Link href="/" className="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-cyan-500/50 rounded-lg p-1">
-              <div className="flex items-center justify-center w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 text-cyan-400 group-hover:border-cyan-500/50 transition-colors shadow-inner">
-                <Cpu className="w-4 h-4" />
-              </div>
-              <div className="flex flex-col">
-                <span className="font-outfit text-lg font-bold tracking-tight text-white group-hover:text-cyan-400 transition-colors">
-                  Alcantara
-                </span>
-                <span className="text-[9px] uppercase tracking-widest font-mono text-slate-400 font-semibold -mt-1">
-                  Sistemas
-                </span>
-              </div>
+            <Link href="/" className="flex items-center group focus:outline-none focus:ring-2 focus:ring-cyan-500/50 rounded-lg p-1">
+              <Image
+                src="/img/logo_branc.png"
+                alt="Alcantara Sistemas Logo"
+                width={360}
+                height={90}
+                className="h-14 sm:h-16 md:h-20 w-auto max-w-[280px] sm:max-w-[340px] object-contain transition-transform duration-300 group-hover:scale-105"
+              />
             </Link>
 
             <p className="text-sm text-slate-400 leading-relaxed max-w-sm">

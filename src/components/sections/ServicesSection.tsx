@@ -1,4 +1,4 @@
-import { Globe, Database, BarChart3, Cpu, ArrowUpRight, CheckCircle2 } from "lucide-react";
+import { Globe, Database, BarChart3, Cpu, Layout, ArrowUpRight, CheckCircle2 } from "lucide-react";
 import { servicesData, ServiceItem } from "@/data";
 
 const iconMap = {
@@ -6,6 +6,7 @@ const iconMap = {
   Database: Database,
   BarChart3: BarChart3,
   Cpu: Cpu,
+  Layout: Layout,
 };
 
 export function ServicesSection() {
@@ -33,8 +34,8 @@ export function ServicesSection() {
           </p>
         </div>
 
-        {/* Grid dos 4 Pilares de Serviços */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* Grid dos Pilares de Serviços (Layout flexível responsivo) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {servicesData.map((service: ServiceItem) => {
             const IconComponent = iconMap[service.iconName];
 
@@ -78,7 +79,7 @@ export function ServicesSection() {
                   </div>
                 </div>
 
-                {/* Footer do Card / Ação de Saiba Mais (Preparado para /servicos/[slug]) */}
+                {/* Footer do Card / Ação */}
                 <div className="pt-4 flex items-center justify-between border-t border-slate-900">
                   <div className="flex flex-wrap gap-2">
                     {service.capabilities.map((cap, idx) => (
@@ -95,7 +96,7 @@ export function ServicesSection() {
                     href="#contato"
                     className="inline-flex items-center gap-1.5 text-xs font-semibold text-cyan-400 hover:text-cyan-300 transition-colors group/link shrink-0 ml-2"
                   >
-                    <span>Especificar Projeto</span>
+                    <span>{service.ctaText || "Especificar Projeto"}</span>
                     <ArrowUpRight className="w-4 h-4 transition-transform duration-200 group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5" />
                   </a>
                 </div>

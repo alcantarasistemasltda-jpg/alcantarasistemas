@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X, ArrowUpRight, Cpu } from "lucide-react";
-import { siteConfig } from "@/lib/constants";
+import Image from "next/image";
+import { Menu, X, ArrowUpRight } from "lucide-react";
 
 const navItems = [
   { label: "Serviços", href: "#servicos" },
@@ -29,28 +29,26 @@ export function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-[#090d16]/85 backdrop-blur-md border-b border-slate-800/80 py-4 shadow-xl shadow-black/20"
-          : "bg-transparent py-6"
+          ? "bg-[#090d16]/85 backdrop-blur-md border-b border-slate-800/80 py-3 shadow-xl shadow-black/20"
+          : "bg-transparent py-4"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Logo Alcantara Sistemas */}
+          {/* Logo Oficial Alcantara Sistemas - Destaque Amplo */}
           <Link
             href="/"
-            className="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-cyan-500/50 rounded-lg p-1"
+            className="flex items-center group focus:outline-none focus:ring-2 focus:ring-cyan-500/50 rounded-lg p-1"
           >
-            <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-slate-900 border border-slate-700/80 text-cyan-400 group-hover:border-cyan-500/50 group-hover:text-cyan-300 transition-all duration-300 shadow-inner">
-              <Cpu className="w-5 h-5 transition-transform duration-300 group-hover:scale-110" />
-              <div className="absolute inset-0 rounded-xl bg-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm" />
-            </div>
-            <div className="flex flex-col">
-              <span className="font-outfit text-lg font-bold tracking-tight text-white group-hover:text-cyan-400 transition-colors">
-                Alcantara
-              </span>
-              <span className="text-[10px] uppercase tracking-widest font-mono text-slate-400 font-semibold -mt-1">
-                Sistemas
-              </span>
+            <div className="relative flex items-center justify-center">
+              <Image
+                src="/img/logo_branc.png"
+                alt="Alcantara Sistemas Logo"
+                width={450}
+                height={120}
+                className="h-16 sm:h-20 md:h-24 lg:h-28 w-auto max-w-[240px] sm:max-w-[320px] md:max-w-[400px] object-contain transition-transform duration-300 group-hover:scale-105"
+                priority
+              />
             </div>
           </Link>
 

@@ -13,6 +13,7 @@ const solutionOptions = [
   "IA",
   "Modernização de sistema existente",
   "Outro",
+  "Site Institucional / Landing Page",
 ];
 
 export function ProjectDiagnosisSection() {
