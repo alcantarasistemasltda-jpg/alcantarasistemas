@@ -15,7 +15,7 @@ export const siteConfig: SiteConfig = {
   url: "https://alcantarasistemas.com.br",
   ogImage: "/og.png",
   links: {
-    whatsapp: "https://wa.me/5500000000000",
+    whatsapp: "https://wa.me/5591981755021",
     email: "contato@alcantarasistemas.com.br",
   },
 };
