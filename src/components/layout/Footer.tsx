@@ -28,12 +28,12 @@ export function Footer() {
             </Link>
 
             <p className="text-sm text-slate-400 leading-relaxed max-w-sm">
-              Engenharia de Software e Plataformas Digitais.
+              Engenharia de Software, Produtos Proprietários e Operação Contínua.
             </p>
 
             <div className="pt-2 text-xs font-mono text-slate-500 flex items-center gap-2">
               <span className="h-2 w-2 rounded-full bg-emerald-400"></span>
-              <span>Operações & Sistemas Ativos</span>
+              <span>Operação Contínua de Plataformas</span>
             </div>
           </div>
 

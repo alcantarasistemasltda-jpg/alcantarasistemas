@@ -3,8 +3,8 @@ import { Hero } from "@/components/sections/Hero";
 import { ServicesSection } from "@/components/sections/ServicesSection";
 import { ProductsSection } from "@/components/sections/ProductsSection";
 import { MethodologySection } from "@/components/sections/MethodologySection";
-import { ProjectDiagnosisSection } from "@/components/sections/ProjectDiagnosisSection";
 import { AboutSection } from "@/components/sections/AboutSection";
+import { ProjectDiagnosisSection } from "@/components/sections/ProjectDiagnosisSection";
 import { Footer } from "@/components/layout/Footer";
 
 export default function HomePage() {
@@ -19,8 +19,8 @@ export default function HomePage() {
         <ServicesSection />
         <ProductsSection />
         <MethodologySection />
-        <ProjectDiagnosisSection />
         <AboutSection />
+        <ProjectDiagnosisSection />
       </main>
 
       {/* Footer Institucional */}
