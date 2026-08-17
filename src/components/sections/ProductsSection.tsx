@@ -9,8 +9,8 @@ export function ProductsSection() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Cabeçalho da Seção */}
-        <div className="flex flex-col items-start max-w-3xl mb-16 md:mb-20">
+        {/* Cabeçalho da Seção (Centralizado) */}
+        <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16 md:mb-20">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs font-mono text-cyan-400 mb-4">
             <Rocket className="w-3.5 h-3.5" />
             <span>VENTURE STUDIO & PRODUTOS PRÓPRIOS</span>
@@ -31,7 +31,7 @@ export function ProductsSection() {
             {productsData.map((product: ProductItem) => (
               <div
                 key={product.id}
-                className="group relative flex flex-col justify-between p-7 rounded-2xl bg-slate-950/70 border border-slate-800/80 hover:border-cyan-500/40 backdrop-blur-xl transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-950/30"
+                className="group relative flex flex-col justify-between p-7 rounded-2xl bg-slate-950/70 border border-slate-800/80 hover:border-cyan-500/40 backdrop-blur-xl transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-950/30 overflow-hidden"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">

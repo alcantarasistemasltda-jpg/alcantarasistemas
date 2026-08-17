@@ -18,8 +18,8 @@ export function ServicesSection() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Cabeçalho da Seção */}
-        <div className="flex flex-col items-start max-w-3xl mb-16 md:mb-20">
+        {/* Cabeçalho da Seção (Centralizado) */}
+        <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16 md:mb-20">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs font-mono text-cyan-400 mb-4">
             <span className="h-1.5 w-1.5 rounded-full bg-cyan-400"></span>
             <span>SERVIÇOS DE ENGENHARIA & SOLUÇÕES</span>

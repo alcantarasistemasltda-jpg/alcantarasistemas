@@ -1,4 +1,5 @@
 import { ArrowRight, Terminal, Layers, ShieldCheck, Cpu, Code2, Server } from "lucide-react";
+import Image from "next/image";
 
 export function Hero() {
   return (
@@ -75,81 +76,49 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Coluna Visual de Engenharia & Software (Mockup Institucional de Arquitetura) */}
+          {/* Coluna Visual de Engenharia & Operação Real no Hero */}
           <div className="lg:col-span-5 relative flex justify-center w-full">
-            <div className="w-full max-w-md lg:max-w-none rounded-2xl border border-slate-800 bg-slate-950/80 p-4 sm:p-5 backdrop-blur-xl shadow-2xl shadow-cyan-950/40 relative">
+            <div className="w-full max-w-md lg:max-w-none rounded-2xl border border-slate-800 bg-slate-950/80 p-4 sm:p-5 backdrop-blur-xl shadow-2xl shadow-cyan-950/40 relative flex flex-col space-y-4">
               
               {/* Barra do Terminal de Controle */}
-              <div className="flex items-center justify-between pb-4 border-b border-slate-800/80">
+              <div className="flex items-center justify-between pb-3 border-b border-slate-800/80">
                 <div className="flex items-center gap-2 min-w-0">
                   <div className="w-3 h-3 rounded-full bg-rose-500/80 shrink-0" />
                   <div className="w-3 h-3 rounded-full bg-amber-500/80 shrink-0" />
                   <div className="w-3 h-3 rounded-full bg-emerald-500/80 shrink-0" />
-                  <span className="ml-2 text-xs font-mono text-slate-400 truncate">alcantara-core-system</span>
+                  <span className="ml-2 text-xs font-mono text-slate-400 truncate">alcantara-live-operations</span>
                 </div>
                 <Terminal className="w-4 h-4 text-slate-500 shrink-0 ml-2" />
               </div>
 
-              {/* Diagrama Conceitual de Plataforma & Engenharia */}
-              <div className="mt-5 space-y-4 font-mono text-xs">
+              {/* Destaque Visual com Foto Real do Stand e Operação Comercial (foto2.jpeg) */}
+              <div className="relative h-64 sm:h-72 w-full rounded-xl overflow-hidden border border-slate-800">
+                <Image
+                  src="/img/foto2.jpeg"
+                  alt="Estrutura de Atendimento e Operação Comercial da Alcantara Sistemas"
+                  fill
+                  className="object-cover object-center transition-transform duration-500 hover:scale-105"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent" />
                 
-                {/* Camada 1: Client Frontends */}
-                <div className="p-3 sm:p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center justify-between gap-2">
-                  <div className="flex items-center gap-2.5 min-w-0">
-                    <div className="p-2 rounded-lg bg-cyan-500/10 text-cyan-400 shrink-0">
-                      <Code2 className="w-4 h-4" />
-                    </div>
-                    <div className="min-w-0">
-                      <p className="text-slate-200 font-semibold truncate">Web & Mobile Frontends</p>
-                      <p className="text-[10px] sm:text-[11px] text-slate-400 truncate">React • Next.js • Native Interfaces</p>
-                    </div>
-                  </div>
-                  <span className="text-[10px] text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20 shrink-0">READY</span>
+                {/* Badge Overlay de Operação Ativa */}
+                <div className="absolute top-3 left-3 bg-slate-950/85 backdrop-blur-md px-3 py-1 rounded-lg border border-cyan-500/30 flex items-center gap-2 text-[11px] font-mono text-cyan-300">
+                  <span className="h-2 w-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                  <span>Operação Comercial em Campo</span>
                 </div>
 
-                {/* Conector Visual */}
-                <div className="flex justify-center my-1">
-                  <div className="w-0.5 h-4 bg-gradient-to-b from-cyan-500/80 to-blue-500/80" />
-                </div>
-
-                {/* Camada 2: Core Processing & APIs */}
-                <div className="p-3 sm:p-3.5 rounded-xl bg-slate-900/90 border border-cyan-500/30 shadow-lg shadow-cyan-500/5 flex items-center justify-between gap-2">
-                  <div className="flex items-center gap-2.5 min-w-0">
-                    <div className="p-2 rounded-lg bg-blue-500/10 text-blue-400 shrink-0">
-                      <Cpu className="w-4 h-4" />
-                    </div>
-                    <div className="min-w-0">
-                      <p className="text-cyan-300 font-semibold truncate">Core System & APIs</p>
-                      <p className="text-[10px] sm:text-[11px] text-slate-400 truncate">Distributed Microservices • Automation</p>
-                    </div>
-                  </div>
-                  <span className="text-[10px] text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded border border-cyan-500/20 shrink-0">ACTIVE</span>
-                </div>
-
-                {/* Conector Visual */}
-                <div className="flex justify-center my-1">
-                  <div className="w-0.5 h-4 bg-gradient-to-b from-blue-500/80 to-indigo-500/80" />
-                </div>
-
-                {/* Camada 3: Cloud & Persistence */}
-                <div className="p-3 sm:p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center justify-between gap-2">
-                  <div className="flex items-center gap-2.5 min-w-0">
-                    <div className="p-2 rounded-lg bg-indigo-500/10 text-indigo-400 shrink-0">
-                      <Server className="w-4 h-4" />
-                    </div>
-                    <div className="min-w-0">
-                      <p className="text-slate-200 font-semibold truncate">Cloud & High-Availability</p>
-                      <p className="text-[10px] sm:text-[11px] text-slate-400 truncate">Isolated DBs • DevOps Infrastructure</p>
-                    </div>
-                  </div>
-                  <span className="text-[10px] text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20 shrink-0">99.9% UPTIME</span>
+                <div className="absolute bottom-3 left-3 right-3 text-left">
+                  <p className="text-xs font-mono text-slate-300 bg-slate-950/80 backdrop-blur-md p-2 rounded-lg border border-slate-800">
+                    Sistemas proprietários operando com presença física e atendimento digital integrado.
+                  </p>
                 </div>
               </div>
 
               {/* Status footer do componente visual */}
-              <div className="mt-5 pt-3 border-t border-slate-800/80 flex items-center justify-between text-[10px] sm:text-[11px] text-slate-400 font-mono">
-                <span>Architecture Status: Operational</span>
-                <span className="text-cyan-400 font-semibold">v2.4 Enterprise</span>
+              <div className="pt-2 border-t border-slate-800/80 flex items-center justify-between text-[10px] sm:text-[11px] text-slate-400 font-mono">
+                <span>Infrastructure: Operational</span>
+                <span className="text-cyan-400 font-semibold">Live Systems & Cloud</span>
               </div>
             </div>
           </div>
