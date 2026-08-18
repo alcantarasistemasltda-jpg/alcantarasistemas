@@ -97,6 +97,7 @@ export function Hero() {
                   src="/img/foto2.jpeg"
                   alt="Estrutura de Atendimento e Operação Comercial da Alcantara Sistemas"
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover object-center transition-transform duration-500 hover:scale-105"
                   priority
                 />
