@@ -115,15 +115,15 @@ export function AboutSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Foto 1: Equipe de Atendimento/Escritório */}
             <div className="group relative rounded-2xl border border-slate-800/80 bg-slate-950/70 overflow-hidden shadow-2xl backdrop-blur-xl hover:border-cyan-500/40 transition-all duration-300 flex flex-col">
-              <div className="relative h-72 sm:h-96 w-full overflow-hidden">
+              <div className="relative h-80 sm:h-[450px] w-full overflow-hidden bg-slate-950/80 flex items-center justify-center">
                 <Image
                   src="/img/foto1.jpeg"
                   alt="Equipe de Atendimento e Engenharia da Alcantara Sistemas"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80 pointer-events-none" />
               </div>
               <div className="p-6 relative bg-slate-950/90 border-t border-slate-800/60">
                 <span className="text-[10px] font-mono text-cyan-400 bg-cyan-500/10 px-2.5 py-1 rounded border border-cyan-500/20 uppercase">
