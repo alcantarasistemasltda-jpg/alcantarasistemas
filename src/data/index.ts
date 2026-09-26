@@ -148,8 +148,8 @@ export const productsData: ProductItem[] = [
     id: "prod-creeser",
     slug: "creeser",
     name: "CREESER",
-    tagline: "ERP Educacional",
-    shortDescription: "Plataforma de gestão educacional desenvolvida para integrar operações acadêmicas, financeiras e administrativas de instituições de ensino.",
+    tagline: "Faculdade, ensino superior e cursos técnicos",
+    shortDescription: "Plataforma de gestão educacional para faculdades, instituições de ensino superior e cursos técnicos, integrando operações acadêmicas, administrativas e financeiras.",
     category: "EdTech / Gestão Educacional",
     type: "Plataforma SaaS",
     productStatus: "Em Operação",
@@ -219,6 +219,17 @@ export const productsData: ProductItem[] = [
     type: "Plataforma SaaS",
     productStatus: "Em Operação",
     url: "https://gestaoservus.com.br/",
+  },
+  {
+    id: "prod-educar360",
+    slug: "educar360",
+    name: "Educar360",
+    tagline: "Sistema de Gestão Escolar Completo",
+    shortDescription: "Plataforma de gestão escolar para centralizar secretaria, financeiro, gestão acadêmica, comunicação com famílias e rotinas da instituição em um único ambiente online.",
+    category: "EdTech / Gestão Escolar",
+    type: "Plataforma SaaS",
+    productStatus: "Em Operação",
+    url: "https://www.educar360.com.br/",
   }
 ];
 
