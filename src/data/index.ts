@@ -230,6 +230,18 @@ export const productsData: ProductItem[] = [
     type: "Plataforma SaaS",
     productStatus: "Em Operação",
     url: "https://www.educar360.com.br/",
+  },
+  {
+    id: "prod-zelunia",
+    slug: "zelunia",
+    name: "ZELUNIA",
+    tagline: "Beleza • Gestão • Bem-Estar",
+    shortDescription: "Plataforma completa de gestão inteligente para clínicas de estética, salões de beleza e bem-estar, centralizando agendamento, clientes, prontuários, financeiro e comissões.",
+    category: "BeautyTech / Gestão & Estética",
+    type: "Plataforma SaaS",
+    productStatus: "Em Operação",
+    logoUrl: "/img/zelunia_logo.png",
+    url: "https://www.zelunia.com.br/",
   }
 ];
 
@@ -304,5 +316,25 @@ export const productionSystemsData: ProductionSystemItem[] = [
     clientCategory: "Gestão Institucional / Convenções e Associações",
     environmentType: "SaaS Ativo",
     accessUrl: "https://gestaoservus.com.br/",
+  },
+  {
+    id: "sys-educar360",
+    productId: "prod-educar360",
+    slug: "educar360",
+    name: "Educar360",
+    description: "Ambiente operacional ativo da plataforma Educar360 para gestão escolar completa e rotinas acadêmicas.",
+    clientCategory: "EdTech / Gestão Escolar",
+    environmentType: "SaaS Ativo",
+    accessUrl: "https://www.educar360.com.br/",
+  },
+  {
+    id: "sys-zelunia",
+    productId: "prod-zelunia",
+    slug: "zelunia",
+    name: "ZELUNIA",
+    description: "Ambiente operacional ativo da plataforma ZELUNIA para gestão inteligente de clínicas de estética, beleza e bem-estar.",
+    clientCategory: "BeautyTech / Gestão & Estética",
+    environmentType: "SaaS Ativo",
+    accessUrl: "https://www.zelunia.com.br/",
   }
 ];
